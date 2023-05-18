@@ -1,0 +1,33 @@
+/*font-family: 'Crimson Text', serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Playfair Display', serif;*/
+
+.let-color{
+    text-decoration: rgb(159, 237, 159);
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+}
+.colormine{
+    text-decoration:rgb(159, 237, 159);;
+}
+.textmine{
+    text-decoration: underline;
+    margin: 30px;
+    font-family: 'Noto Serif', serif;
+}
+.protima1{
+    padding-left: 50px;
+    margin: 10px;
+}
+.protima2{
+    padding-left: 50px;
+    margin: 10px;
+}
+.protima3{
+    padding-left: 50px;
+    margin: 10px;
+}
+.protima4{
+    padding-left: 50px;
+    margin: 10px;
+}
