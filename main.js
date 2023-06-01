@@ -23,78 +23,35 @@ arrayClientes.push(clientesNancy);
 
 console.log(arrayClientes);
 
-//funcion con lista de productos 
-
-function lista () {
-  alert('Bienvenidos a JGFitness');
-  let opciones= parseInt(prompt('Ingrese la opcion que necesite: \n 1) Nuevo cliente \n 2) Comprar productos \n 3) Visita al local \n 4) Desubscripcion \n 5)Salir'));
-  return opciones;
-}
-
-// funcion nuevos clientes 
-
-function nuevoCliente() {
-  let nombre = prompt('Ingrese su nombre');
-  let apellido = prompt ('Ingrese su apellido');
-  let edad = parseInt(prompt('Ingrese su edad'));
-  let cliente = new Clientes(nombre, apellido, edad);
-  arrayClientes.push(cliente);
-  console.log(arrayClientes);
-}
-
-//funcion comprar productos 
-
+//lista de productos
 const productos =[
   {id:1, nombre: "protenpolvo", precio: 20.000},
   {id:2, nombre: "colageno", precio: 15.000},
   {id:3, nombre: "barraproteica", precio: 800},
 ];
-console.log(productos);
+productos.forEach((producto) =>{
+  console.log(producto);
+});
+ 
+let item= document.createElement("ul");
+ item.classList.add("items");
+ item.innerHTML += `<li class="prod-item">${productos[0]}</li>`;
+ item.innerHTML += `<li class="prod-item">${productos[1]}</li>`;
+ item.innerHTML += `<li class="prod-item">${productos[2]}</li>`;
 
-//funcion visitar nuestro local 
+contenido.append(item)
 
-function visitalocal () {
-let nombre = prompt('Ingrese su nombre');
-let mensaje = ('Visitenos en Av.Rafael Nuñez 4820 de lunes a viernes de 10:00-21:00hrs');
-}
-visitalocal();
+//funcion opciones
+let lista = document.createElement("ul");
+lista.classList.add("lista");
+lista.innerText = "<li>Nuevo cliente</li>";
+lista.innerHTML += "<li>Comprar productos</li>";
+lista.innerHTML += "<li>Visita al local</li>";
+lista.innerHTML += "<li>Desubscripcion</li>";
+lista.innerHTML += "<li>Salir</li>";
 
-//funcion desubcripcion
+console.log(lista);
 
-function desubcripcion () {
-  let apellido = prompt('Ingrese su apellido');
-  let cliente = arrayClientes.find((cliente) => cliente.apellido === apellido);
-  let indice = arrayClientes.indexOf(cliente);
-  arrayClientes.slice(indice,1);
-  console.log(arrayClientes);
-}
+ 
 
-//funcion de salir
 
-function salir(){
-  alert('Gracias por visitar nuestra web, espero que les haya gustado');
-}
-
-//ejecucion del programa
-
-let opciones = lista();
-switch(opciones){
-  case 1:
-    nuevoCliente();
-    break;
-  case 2:
-    productos();
-    break;
-  case 3:
-    visitalocal();
-    break;
-  case 4:
-    desubcripcion();
-    break;
-  case 5:
-    salir();
-    break;
-  default:
-    alert('Opcion incorrecta, vuelve a intentarlo');
-    break;
-}
