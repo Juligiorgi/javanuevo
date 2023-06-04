@@ -24,58 +24,50 @@ arrayClientes.push(clientesNancy);
 
 console.log(arrayClientes);
 
-//funcion opciones
-let lista = document.getElementsByClassName("lista");
-console.log(lista[0].innerHTML);
-console.log(lista[1].innerHTML);
-console.log(lista[2].innerHTML);
-console.log(lista[3].innerHTML);
-console.log(lista[4].innerHTML);
+//funcion con lista de productos 
 
-//lista de productos
-const productos =[
-  {id:1, nombre: "Proteina en polvo", precio: 20.000},
-  {id:2, nombre: "Colageno", precio: 15.000},
-  {id:3, nombre: "Barra proteica", precio: 800},
-];
+const bienvenidos=document.getElementById("bienvenida");
+bienvenida.innerText="Bienvenidos a JGfittnes"
+const clientes= document.getElementById("cliente");
+cliente.innerText="Registrate"
+const clientenuevo=document.getElementById("nuevosclientes");
+clientenuevo.addEventListener("submit", nuevoCliente);
 
-const contenido = document.getElementById('contenido')
-productos.forEach((producto) =>{
-  console.log(producto);
-  
-let item= document.createElement("ul");
- item.classList.add("items");
-  item.innerHTML += `<li class="prod-item">${producto.nombre}</li>`;
- contenido.appendChild(item)
+// funcion nuevos clientes 
 
-});
- 
-let boton = document.getElementById("butmain")
-boton.onclick = () => {console.log("Enviar")}
-boton.onmouseup = () => {console.log("Down")}
-
-const formulario2= document.getElementById("formulario2");
- formulario2.addEventListener("submit", cliente);
-
-function cliente(e){
-  e.preventDefault();
-  const nombre= document.getElementById("nombre").value;
-  const apellido = document.getElementById("Apellido").value;
-  const email = document.getElementById("Email").value;
-  const telefono= document.getElementById("Telefono").value;
-  console.log(cliente);
-  
-  
-  let usuario ={
-    nombre: nombre,
-    apellido: apellido,
-    email: email,
-    telefono: telefono,
+function nuevoCliente(e) {
+  e.preventDefault()
+ const nombre=document.getElementById("nombrecliente").value;
+ const apellido=document.getElementById("apellidocliente").value;
+ const email=document.getElementById("emailcliente").value;
+ const telefono=document.getElementById("telefonocliente").value;
+ let usuario={
+  nombre:nombre,
+  apellido:apellido,
+  email:email,
+  telefono:telefono,
 };
 localStorage.setItem("usuario", JSON.stringify(usuario));
 }
 
+//funcion comprar productos 
 
+const productos =[
+  {id:1, nombre: "protenpolvo", precio: 20.000},
+  {id:2, nombre: "colageno", precio: 15.000},
+  {id:3, nombre: "barraproteica", precio: 800},
+];
+productos.forEach((producto) =>{
+  console.log(producto);
+});
  
+let item= document.createElement("ul");
+ item.classList.add("items");
+ item.innerHTML += `<li class="prod-item">${productos[0]}</li>`;
+ item.innerHTML += `<li class="prod-item">${productos[1]}</li>`;
+ item.innerHTML += `<li class="prod-item">${productos[2]}</li>`;
+
+
+
 
 
