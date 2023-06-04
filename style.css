@@ -31,3 +31,53 @@ font-family: 'Playfair Display', serif;*/
     padding-left: 50px;
     margin: 10px;
 }
+.col1{
+    padding-left: 50px;
+    margin: 10px;
+}
+.col2{
+    padding-left: 50px;
+    margin: 10px;
+}
+.col3{
+    padding-left: 50px;
+    margin: 10px;
+}
+.br1{
+    padding-left: 50px;
+    margin: 10px;
+}
+.br2{
+    padding-left: 50px;
+    margin: 10px;
+}
+.br3{
+    padding-left: 50px;
+    margin: 10px;
+}
+.reg{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    padding: 10px;
+}
+.titulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    padding: 10px;
+}
+.lista{
+    font-family:'Noto Serif', serif;
+    margin: 10px;
+}
+.lista1{
+   font-family:'Noto Serif', serif;
+   margin: 10px;
+}
+.tyt{
+    font-family:'Noto Serif', serif;
+}
+.contenid{
+    font-family:'Noto Serif', serif;
+    margin: 10px;
+}
+
