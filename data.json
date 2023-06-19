@@ -1,0 +1,13 @@
+  
+  [
+  {"nombre":"proteina de frutilla ","precio": 20000, "cantidad":1, "desc":"proteina de frutilla", "id":1},
+  {"nombre":"proteina de vainilla", "precio":20000, "cantidad":1, "desc":"proteina de vainilla", "id":2},
+  {"nombre":"proteina de chocolate", "precio":20000, "cantidad":1, "desc":"proteina de chocolate", "id":3},
+  {"nombre":"proteina vegetal", "precio":25000, "cantidad":1, "desc":"proteina vegetal sin sabor", "id":4},
+  {"nombre":"colageno de lima", "precio": 15000, "cantidad":1, "desc":"colageno de lima y frutilla", "id":5},
+  {"nombre":"colageno sinsabor", "precio":10000, "cantidad":1, "desc":"colageno sin sabor", "id":5},
+  {"nombre":"colageno de pomelo", "precio":15000, "cantidad":1, "desc":"colageno de pomelo", "id":6},
+  {"nombre":"barra proteica cookies and cream", "precio":800, "cantidad":1, "desc":"barra de proteina sabor cookies and cream", "id":6},
+  {"nombre":"barra proteica frutilla", "precio":800, "cantidad":1, "desc":"barra de proteina sabor frutilla", "id":7},
+  {"nombre":"barra proteica cookie dough", "precio": 800, "cantidad":1, "desc":"barra de proteina sabor cookies dough", "id":8}
+  ]

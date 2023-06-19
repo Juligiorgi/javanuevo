@@ -3,9 +3,10 @@ font-family: 'Noto Serif', serif;
 font-family: 'Playfair Display', serif;*/
 
 .let-color{
-    text-decoration: rgb(159, 237, 159);
+    background-color: palevioletred;
     font-family: 'Playfair Display', serif;
    font-size: 80px;
+   
 }
 .colormine{
     text-decoration:rgb(159, 237, 159);;
@@ -15,56 +16,6 @@ font-family: 'Playfair Display', serif;*/
     margin: 30px;
     font-family: 'Noto Serif', serif;
 }
-.protima1{
-    padding-left: 50px;
-    margin: 10px;
-}
-.protima2{
-    padding-left: 50px;
-    margin: 10px;
-}
-.protima3{
-    padding-left: 50px;
-    margin: 10px;
-}
-.protima4{
-    padding-left: 50px;
-    margin: 10px;
-}
-.col1{
-    padding-left: 50px;
-    margin: 10px;
-}
-.col2{
-    padding-left: 50px;
-    margin: 10px;
-}
-.col3{
-    padding-left: 50px;
-    margin: 10px;
-}
-.br1{
-    padding-left: 50px;
-    margin: 10px;
-}
-.br2{
-    padding-left: 50px;
-    margin: 10px;
-}
-.br3{
-    padding-left: 50px;
-    margin: 10px;
-}
-.reg{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
-    padding: 10px;
-}
-.titulo{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
-    padding: 10px;
-}
 .lista{
     font-family:'Noto Serif', serif;
     margin: 10px;
@@ -72,6 +23,8 @@ font-family: 'Playfair Display', serif;*/
 .lista1{
    font-family:'Noto Serif', serif;
    margin: 10px;
+   padding: 20px;
+   margin-top: 10px;
 }
 .tyt{
     font-family:'Noto Serif', serif;
@@ -80,4 +33,25 @@ font-family: 'Playfair Display', serif;*/
     font-family:'Noto Serif', serif;
     margin: 10px;
 }
+.img-card-top{
+    padding: 15px;
+    border: 25px;
+    margin-top: 15px;
+}
+.producto{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    margin-top: 10px;
+    border: 20px;
+}
 
+.productoEnElCarrito{
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boton-enviar{
+    padding-top: 5px;
+    border-radius: 3px;
+}
